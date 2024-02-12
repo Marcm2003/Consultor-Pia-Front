@@ -1,0 +1,32 @@
+.containerApp {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.header {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin-top: 200px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 40px;
+}
+
+.tableContainer {
+    max-width: 2000px;
+    overflow-x: auto;
+}

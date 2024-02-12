@@ -1,0 +1,12 @@
+.mediaButton {
+    height: 50px;
+    width: 50px;
+    color: white;
+    background-color: #A65656;
+    font-size: 25px;
+}
+
+.barraInferior {
+    background-color: #592C38;
+    font-weight: bold;
+}

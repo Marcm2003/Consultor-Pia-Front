@@ -1,0 +1,34 @@
+<div class="containerApp">
+  <app-header class="header"></app-header>
+
+  <div style="color: aliceblue;" class="content">
+    <div class="tableContainer">
+      <table class="table table-striped text-center">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Primer Apellido</th>
+            <th scope="col">Segundo Apellido</th>
+            <th scope="col">Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let alumno of listaAlumnos">
+            <td [ngStyle]="{'background-color' :alumno?.encontrado ? 'yellow' : ''}">{{ alumno?.nombre }}</td>
+            <td [ngStyle]="{'background-color' :alumno?.encontrado ? 'yellow' : ''}">{{ alumno?.primerApellido }}</td>
+            <td [ngStyle]="{'background-color' :alumno?.encontrado ? 'yellow' : ''}">{{ alumno?.segundoApellido }}</td>
+            <td [ngStyle]="{'background-color' :alumno?.nota >= 5 ? 'green' : 'red'}">{{ alumno?.nota }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mx-4 my-5">
+      <input type="text" [(ngModel)]="idBusqueda">
+      <button (click)="buscar()">Buscar</button>
+    </div>
+
+  </div>
+  <app-footer class="footer"></app-footer>
+</div>
+
