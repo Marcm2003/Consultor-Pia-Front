@@ -7,17 +7,15 @@ import { Observable } from 'rxjs';
 })
 export class AlumnosService {
 
-  private LOCAL_BACK_URL = 'http://localhost:8080/api/';
-
   constructor(
     private http : HttpClient
   ) { }
 
   getListadoAlumnos(): Observable<any> {
-    return this.http.get(this.LOCAL_BACK_URL + 'alumnos/listado')
+    return this.http.get('http://localhost:4200/api/alumnos/listado')
   }
   
   getAlumno(idAlumno: any): Observable<any> {
-    return this.http.get(this.LOCAL_BACK_URL + `alumnos/${idAlumno}`);
+    return this.http.get(`http://localhost:4200/api/alumnado/${idAlumno}`);
   }
 }
