@@ -16,8 +16,8 @@
           <tr *ngFor="let alumno of listaAlumnos">
             <td [ngStyle]="{'background-color' :alumno?.encontrado ? 'yellow' : ''}">{{ alumno?.nombre }}</td>
             <td [ngStyle]="{'background-color' :alumno?.encontrado ? 'yellow' : ''}">{{ alumno?.primerApellido }}</td>
-            <td [ngStyle]="{'background-color' :alumno?.encontrado ? 'yellow' : ''}">{{ alumno?.segundoApellido }}</td>
-            <td [ngStyle]="{'background-color' :alumno?.nota >= 5 ? 'green' : 'red'}">{{ alumno?.nota }}</td>
+            <td [ngStyle]="{'background-color' :alumno?.encontrado ? 'yellow' : ''}">{{ alumno?.segundoApelido }}</td>
+            <td [ngStyle]="{'background-color' :alumno?.nota >= 5 ? 'red' : 'green'}">{{ alumno?.nota }}</td>
           </tr>
         </tbody>
       </table>
